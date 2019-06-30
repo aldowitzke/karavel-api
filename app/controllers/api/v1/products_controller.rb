@@ -1,4 +1,4 @@
-class Api::V1::ProductsController < Api::V1::ApplicationController
+class Api::V1::ProductsController < ApplicationController
   before_action :set_product, only: [ :show, :update, :destroy ]
   skip_before_action :verify_authenticity_token
   
@@ -17,7 +17,7 @@ class Api::V1::ProductsController < Api::V1::ApplicationController
       render_error
     end
   end
-  
+
   def update
     if @product.update(product_params)
       render :show
@@ -34,7 +34,7 @@ class Api::V1::ProductsController < Api::V1::ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:name)
+    params.require(:product).permit(:name, species: [:species_id])
   end
 
   def set_product
