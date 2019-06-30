@@ -118,7 +118,9 @@ Body JSON
 
 ## Export Standards
 
-Export Standard is a join table to join Species + Quality and a value. This way you can set what is the export standard for each specie. I.E: White Rice needs a umidity value of less than 4%.
+Export Standard is a join table to join Species + Quality and a value. This way you can set what is the export standard for each species. i.e: White Rice needs a humidity value of less than 4%.
+
+Export Standard (padrão de exportação) é uma join table para juntar espécies + qualidade e um valor. Dessa maneira, você consegue estabelecer padrões de exportação para cada uma de suas espécies. Por exemplo: Arroz branco necessita de valor de umidade menor que 4%.
 
 ### Create/POST
 
