@@ -6,7 +6,7 @@ RSpec.describe Quality, type: :model do
       quality = Quality.new.save
       expect(quality).to eq(false)
     end
-    it 'ensures name uniqueness presence validation' do
+    it 'ensures name uniqueness validation' do
       humidity1 = Quality.new(name: "humidity").save
       humidity2 = Quality.new(name: "humidity").save
       expect(humidity2).to eq(false)
