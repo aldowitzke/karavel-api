@@ -2,7 +2,7 @@
 
 This is an API created for the Karavel's challenge. 
 
-The purpose of this API is to manage a agro trade business, where you can create, update and destroy products, species, qualities and exportion standards.
+The purpose of this API is to manage a agro trade business, where you can list, create, update and destroy products, species, qualities and exportion standards.
 
 To make it easier, you can use an API development environment (like Postman) and follow the steps below. Don't forget to run your rails server.
 
@@ -11,7 +11,7 @@ To make it easier, you can use an API development environment (like Postman) and
 
 Essa é uma API criada para o desafio da Karavel.
 
-O objetivo dessa API é gerenciar negócios em agro trade, onde você consegue criar, atualizar e deletar produtos, espécies, qualidades e padrões de exportação.
+O objetivo dessa API é gerenciar negócios em agro trade, onde você consegue listar, criar, atualizar e deletar produtos, espécies, qualidades e padrões de exportação.
 
 Para facilitar, você pode usar um software de ambiente de desenvolvimento de API (por exemplo: Postman) e seguir os passos abaixo. Não se esqueça de ligar o seu rails server.
 
