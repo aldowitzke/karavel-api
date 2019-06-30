@@ -1,0 +1,1 @@
+json.extract! @standard, :species_id, :quality_id, :value

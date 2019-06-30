@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  species: one
+  quality: one
+  value: 1.5
+
+two:
+  species: two
+  quality: two
+  value: 1.5

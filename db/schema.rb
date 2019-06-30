@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_27_204708) do
+ActiveRecord::Schema.define(version: 2019_06_30_180643) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "exportation_standards", force: :cascade do |t|
+    t.bigint "species_id"
+    t.bigint "quality_id"
+    t.float "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["quality_id"], name: "index_exportation_standards_on_quality_id"
+    t.index ["species_id"], name: "index_exportation_standards_on_species_id"
+  end
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -23,11 +33,19 @@ ActiveRecord::Schema.define(version: 2019_06_27_204708) do
     t.index ["species_id"], name: "index_products_on_species_id"
   end
 
+  create_table "qualities", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "species", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "exportation_standards", "qualities"
+  add_foreign_key "exportation_standards", "species"
   add_foreign_key "products", "species"
 end

@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :products, only: [ :index, :show, :update, :create, :destroy ]
       resources :species, only: [ :index, :show, :update, :create, :destroy ]
+      resources :qualities, only: [ :index, :show, :update, :create, :destroy ]
+      resources :exportation_standards, only: [ :index, :show, :update, :create, :destroy ]
     end
   end
 end
