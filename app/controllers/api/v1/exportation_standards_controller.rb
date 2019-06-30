@@ -1,5 +1,5 @@
 class Api::V1::ExportationStandardsController < ApplicationController
-  before_action :set_standards, only: [ :show, :update, :destroy ]
+  before_action :set_standard, only: [ :show, :update, :destroy ]
   skip_before_action :verify_authenticity_token
   
   def index
@@ -27,7 +27,7 @@ class Api::V1::ExportationStandardsController < ApplicationController
   end
 
   def destroy
-    @standards.destroy
+    @standard.destroy
     head :no_content
   end
 
@@ -38,7 +38,7 @@ class Api::V1::ExportationStandardsController < ApplicationController
   end
 
   def set_standard
-    @standard = ExportantionStandard.find(params[:id]) 
+    @standard = ExportationStandard.find(params[:id]) 
   end
 
   def render_error

@@ -19,7 +19,7 @@ class Api::V1::SpeciesController < ApplicationController
   end
   
   def update
-    if @species.update(product_params)
+    if @species.update(species_params)
       render :show
     else
       render_error
