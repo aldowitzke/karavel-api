@@ -30,6 +30,9 @@ rails db:setup
 
 3) Let's run the server
 rails server
+
+4) To run the tests:
+rake
 ```
 
 # Começando
@@ -47,6 +50,9 @@ rails db:setup
 
 3) Vamos iniciar o servidor:
 rails server
+
+4) Para rodar os testes:
+rake
 ```
 
 ## Products
