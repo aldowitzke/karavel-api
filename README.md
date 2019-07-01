@@ -4,7 +4,7 @@ This is an API created for the Karavel's challenge.
 
 The purpose of this API is to manage a agro trade business, where you can list, create, update and destroy products, species, qualities and exportion standards.
 
-To make it easier, you can use an API development environment (like Postman) and follow the steps below. Don't forget to run your rails server.
+To make it easier, you can use an API development environment (i.e [Postman](https://www.getpostman.com/)) and follow the steps below.
 
 # Portuguese Version
 
@@ -13,7 +13,47 @@ Essa é uma API criada para o desafio da Karavel.
 
 O objetivo dessa API é gerenciar negócios em agro trade, onde você consegue listar, criar, atualizar e deletar produtos, espécies, qualidades e padrões de exportação.
 
-Para facilitar, você pode usar um software de ambiente de desenvolvimento de API (por exemplo: Postman) e seguir os passos abaixo. Não se esqueça de ligar o seu rails server.
+Para facilitar, você pode usar um software de ambiente de desenvolvimento de API (por exemplo: [Postman](https://www.getpostman.com/)) e seguir os passos abaixo.
+
+# Getting Ready
+
+Run the following commands inside your projects directory:
+
+```
+1) Let's clone the repository:
+git clone https://github.com/aldowitzke/karavel-api.git
+# You will be asked for your credentials to move forward with the cloning.
+
+2) Now let's setup:
+bundle install
+rails db:setup
+
+3) Let's run the server
+rails server
+
+4) To run the tests:
+rake
+```
+
+# Começando
+
+Rode os seguintes comandos dentro do seu diretório de projetos:
+
+```
+1) Vamos clonar o repositório:
+git clone https://github.com/aldowitzke/karavel-api.git
+# Será pedido suas credenciais para continuar com o clone.
+
+2) Vamos configurar:
+bundle install
+rails db:setup
+
+3) Vamos iniciar o servidor:
+rails server
+
+4) Para rodar os testes:
+rake
+```
 
 ## Products
 
@@ -72,7 +112,7 @@ http://localhost:3000/api/v1/species
 
 ```
 Request URL
-http://localhost:3000/api/v1/products/id
+http://localhost:3000/api/v1/species/id
 
 JSON Body
 { "species": {"name": "Wax bean" } }
@@ -82,12 +122,14 @@ JSON Body
 
 ```
 Request URL
-http://localhost:3000/api/v1/products/id
+http://localhost:3000/api/v1/species/id
 ```
 
 ## Quality
 
 You can create qualities to manage the basic qualities your grains need, such as humidity, proteins, impurities and folic acid.
+
+Você pode criar qualidades para gerenciar as qualidades básicas que seus grãos precisam, como umidade, proteínas, impurezas e ácido fólico. 
 
 ### Create/POST
 
@@ -114,6 +156,13 @@ http://localhost:3000/api/v1/qualities/id
 
 Body JSON
 { "quality": { "name": "Umidity" } }
+```
+
+### Delete
+
+```
+Request URL
+http://localhost:3000/api/v1/qualities/id
 ```
 
 ## Export Standards
@@ -153,7 +202,7 @@ Body JSON
 
 ```
 Request URL
-http://localhost:3000/api/v1/exportation_standards/1
+http://localhost:3000/api/v1/exportation_standards/id
 ```
 
 
