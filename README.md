@@ -112,7 +112,7 @@ http://localhost:3000/api/v1/species
 
 ```
 Request URL
-http://localhost:3000/api/v1/products/id
+http://localhost:3000/api/v1/species/id
 
 JSON Body
 { "species": {"name": "Wax bean" } }
@@ -122,7 +122,7 @@ JSON Body
 
 ```
 Request URL
-http://localhost:3000/api/v1/products/id
+http://localhost:3000/api/v1/species/id
 ```
 
 ## Quality
@@ -156,6 +156,13 @@ http://localhost:3000/api/v1/qualities/id
 
 Body JSON
 { "quality": { "name": "Umidity" } }
+```
+
+### Delete
+
+```
+Request URL
+http://localhost:3000/api/v1/qualities/id
 ```
 
 ## Export Standards
