@@ -89,6 +89,8 @@ http://localhost:3000/api/v1/products/id
 
 You can create qualities to manage the basic qualities your grains need, such as humidity, proteins, impurities and folic acid.
 
+Você pode criar qualidades para gerenciar as qualidades básicas que seus grãos precisam, como umidade, proteínas, impurezas e ácido fólico. 
+
 ### Create/POST
 
 ```
@@ -153,7 +155,7 @@ Body JSON
 
 ```
 Request URL
-http://localhost:3000/api/v1/exportation_standards/1
+http://localhost:3000/api/v1/exportation_standards/id
 ```
 
 
